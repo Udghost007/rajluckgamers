@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HomePage from "@/components/HomePage";
 
 export const metadata: Metadata = {
-  title: "Rajluck Game – Download APK, Login, Register & Complete Guide 2026",
+  title: "Official Rajluck Game App – Download & Features 2026",
   description:
-    "Welcome to RajluckGamers — your complete guide to Rajluck Game. Download the latest Rajluck APK for Android, learn how to register and login, explore Rajluck App features, and discover promotions. Official Rajluck Game download, rajluck apk, rajluck app, rajluckgame — all in one place.",
+    "Rajluck Game is an Android gaming platform with 300+ games. Learn how to download the APK, register, and explore features. Step-by-step guide for Rajluck Game 2026.",
   keywords: [
     "Rajluck",
     "Rajluck Game",

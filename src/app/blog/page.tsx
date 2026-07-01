@@ -4,7 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Rajluck Game Blog – Latest News, Guides & Updates",
   description:
-    "Read the latest articles, guides, and news about Rajluck Game. Get tips on Rajluck APK download, Rajluck Game register, Rajluck Game login, Rajluck App features, and more from RajluckGamers.",
+    "Read the latest articles, guides, and news about Rajluck Game. Get tips on APK download, registration, login, and App features from RajluckGamers.",
+  alternates: {
+    canonical: "https://rajluckgamers.com/blog",
+  },
   keywords: [
     "Rajluck Game blog",
     "Rajluck Game news",

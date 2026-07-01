@@ -122,7 +122,7 @@ export default function HomePage() {
           <div className="text-center mx-auto">
             <Image
               src="/raj-luck-game.webp"
-              alt="Rajluck Game Logo"
+              alt="Official Rajluck Game APK Logo"
               width={180}
               height={180}
               className="w-[100px] sm:w-[180px] mx-auto mb-6 drop-shadow-2xl animate-fade-in"

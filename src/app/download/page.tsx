@@ -7,7 +7,7 @@ const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA
 export const metadata: Metadata = {
   title: "Download Rajluck Game APK – Latest Version for Android 2026",
   description:
-    "Download the latest Rajluck Game APK for Android. Step-by-step Rajluck download guide, device requirements, installation instructions, and tips. Get the Rajluck App now — rajluck apk download, rajluck game download, rajluck game apk.",
+    "Download the latest Rajluck Game APK for Android. Follow our step-by-step Rajluck download guide, device requirements, and installation instructions.",
   keywords: [
     "Rajluck Game download",
     "Rajluck APK download",

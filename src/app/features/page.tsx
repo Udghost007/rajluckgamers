@@ -6,7 +6,10 @@ const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA
 export const metadata: Metadata = {
   title: "Rajluck Game Features – Complete Feature Overview 2026",
   description:
-    "Explore all features of Rajluck Game — fast registration, secure Rajluck Game login, clean dashboard, regular promotions, Android compatibility, and account security. Everything the Rajluck App and Rajluck APK offer in 2026.",
+    "Explore all features of Rajluck Game: fast registration, secure login, clean dashboard, daily promotions, and Android compatibility. Discover the Rajluck App.",
+  alternates: {
+    canonical: "https://rajluckgamers.com/features",
+  },
   keywords: [
     "Rajluck Game features",
     "Rajluck App features",

@@ -99,7 +99,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 mb-4 group"
             >
-              <Image src="/logo.webp" alt="Rajluck Game Logo" width={36} height={36} className="w-9 h-9 rounded-lg shadow-md" />
+              <Image src="/logo.webp" alt="Official Rajluck Game APK Logo" width={36} height={36} className="w-9 h-9 rounded-lg shadow-md" />
               <span className="text-lg font-bold text-white tracking-tight">
                 Rajluck<span className="text-red-400">Game</span>
               </span>

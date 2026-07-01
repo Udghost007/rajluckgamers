@@ -71,13 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/rajluckgame`,
+      url: `${baseUrl}/rajluck-game`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/rajluckgamers`,
+      url: `${baseUrl}/rajluck-gamers`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/rajluckapk`,
+      url: `${baseUrl}/rajluck-apk`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
@@ -107,25 +107,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/rajluckgameapk`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/rajluckgameapkdownload`,
+      url: `${baseUrl}/rajluck-game-apk`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/raj-luck-game-apk-download`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/rajluckapkdownload`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,

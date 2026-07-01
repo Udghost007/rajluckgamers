@@ -83,9 +83,6 @@ export const metadata: Metadata = {
       "Rajluck Game is a mobile-friendly gaming platform for Android. Download the latest Rajluck APK, register, login, and explore features & rewards.",
     images: ["/og-image.png"],
   },
-  alternates: {
-    canonical: "https://rajluckgamers.com",
-  },
   verification: {
     google: "0-OG2l1pCdOxbT9qR_S_XQ7_mwLRJDWpC6yXcMnFU44",
   },
@@ -112,7 +109,11 @@ const jsonLd = {
       "@id": "https://rajluckgamers.com/#organization",
       name: "Rajluck Game",
       url: "https://rajluckgamers.com",
-      sameAs: [],
+      logo: "https://rajluckgamers.com/logo.webp",
+      sameAs: [
+        "https://www.facebook.com/rajluckgame",
+        "https://t.me/rajluckgame"
+      ],
     },
     {
       "@type": "SoftwareApplication",

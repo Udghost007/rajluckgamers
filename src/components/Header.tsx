@@ -98,7 +98,7 @@ export default function Header() {
           >
             <Image
               src="/logo.webp"
-              alt="Rajluck Game Logo"
+              alt="Official Rajluck Game APK Logo"
               width={36}
               height={36}
               className="w-9 h-9 rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
