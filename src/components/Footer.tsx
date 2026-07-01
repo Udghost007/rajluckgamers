@@ -9,6 +9,29 @@ const quickLinks = [
   { name: "About", href: "/about" },
   { name: "Features", href: "/features" },
   { name: "Blog", href: "/blog" },
+  { name: "Complete Guide", href: "/blog/rajluck-game-complete-guide" },
+  { name: "APK Download Guide", href: "/blog/rajluck-apk-download-android" },
+  { name: "Register & Login", href: "/blog/rajluck-game-register-login" },
+];
+
+const rajluckLinks = [
+  { name: "Rajluck", href: "/rajluck" },
+  { name: "Raj Luck", href: "/raj-luck" },
+  { name: "Raj Luck Game", href: "/raj-luck-game" },
+  { name: "RajluckGame", href: "/rajluckgame" },
+  { name: "RajluckGamers", href: "/rajluckgamers" },
+  { name: "Raj Luck Gamers", href: "/raj-luck-gamers" },
+];
+
+const apkLinks = [
+  { name: "Rajluck APK", href: "/rajluckapk" },
+  { name: "Raj Luck APK", href: "/raj-luck-apk" },
+  { name: "Raj Luck Game APK", href: "/raj-luck-game-apk" },
+  { name: "Rajluck Game APK", href: "/rajluckgameapk" },
+  { name: "Rajluck APK Download", href: "/rajluck-apk-download" },
+  { name: "Rajluck Game APK Download", href: "/rajluckgameapkdownload" },
+  { name: "Raj Luck Game APK Download", href: "/raj-luck-game-apk-download" },
+  { name: "Rajluck APK Download", href: "/rajluckapkdownload" },
 ];
 
 const legalLinks = [
@@ -44,9 +67,9 @@ export default function Footer() {
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Brand */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <a
               href={CTA_LINK}
               target="_blank"
@@ -79,10 +102,39 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-400 hover:text-red-400 transition-colors"
-                  >
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Rajluck Pages */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Rajluck
+            </h4>
+            <ul className="space-y-2.5">
+              {rajluckLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* APK Downloads */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              APK Download
+            </h4>
+            <ul className="space-y-2.5">
+              {apkLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -98,10 +150,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {legalLinks.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-400 hover:text-red-400 transition-colors"
-                  >
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
                     {link.name}
                   </Link>
                 </li>
