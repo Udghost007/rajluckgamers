@@ -1,8 +1,7 @@
-"use client";
-
-import { useState } from "react";
+import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import FaqAccordion from "./FaqAccordion";
 
 const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA0DL7ND&ts=1782835740&m=2&lang=en&id=1";
 
@@ -111,8 +110,6 @@ const faqs = [
 ];
 
 export default function HomePage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
   return (
     <>
       {/* Hero Section */}
@@ -134,7 +131,7 @@ export default function HomePage() {
             <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               Rajluck Game • Rajluck APK • Rajluck App
             </span>
-            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               Rajluck Game – Download Guide, Login Process, Features &amp; User Information
             </h1>
             <p className="text-sm sm:text-xl text-black leading-relaxed mb-4 sm:mb-5 animate-slide-up delay-200 mx-auto">
@@ -439,32 +436,9 @@ export default function HomePage() {
               Find answers to common questions about Rajluck Game.
             </p>
           </div>
-          <div className="space-y-3">
-            {faqs.map((faq, i) => (
-              <div key={i} className="faq-item">
-                <button
-                  className="faq-question"
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  aria-expanded={openFaq === i}
-                >
-                  <span>{faq.q}</span>
-                  <svg
-                    className={`w-5 h-5 text-text-muted transition-transform duration-300 flex-shrink-0 ${openFaq === i ? "rotate-180" : ""}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {openFaq === i && (
-                  <div className="faq-answer animate-fade-in">
-                    <p>{faq.a}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          <Suspense fallback={<div className="text-center text-text-muted py-8">Loading FAQs...</div>}>
+            <FaqAccordion faqs={faqs} />
+          </Suspense>
         </div>
       </section>
     </>

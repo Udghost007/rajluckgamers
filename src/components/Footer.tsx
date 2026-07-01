@@ -32,6 +32,29 @@ const apkLinks = [
   { name: "Rajluck Game APK Download", href: "/rajluckgameapkdownload" },
   { name: "Raj Luck Game APK Download", href: "/raj-luck-game-apk-download" },
   { name: "Rajluck APK Download", href: "/rajluckapkdownload" },
+  { name: "Rajluck Game Download", href: "/rajluck-game-download" },
+  { name: "Rajluck App Download", href: "/rajluck-app-download" },
+  { name: "Download Rajluck", href: "/download-rajluck" },
+  { name: "Rajluck Download", href: "/rajluck-download" },
+  { name: "Rajluck Game APK Download", href: "/rajluck-game-apk-download" },
+  { name: "Rajluck Game Install", href: "/rajluck-game-install" },
+  { name: "Rajluck Game Latest Version", href: "/rajluck-game-latest-version" },
+  { name: "Rajluck Game Update", href: "/rajluck-game-update" },
+];
+
+const moreLinks = [
+  { name: "Rajluck Game Login", href: "/rajluck-game-login" },
+  { name: "Rajluck Login", href: "/rajluck-login" },
+  { name: "Rajluck Game Register", href: "/rajluck-game-register" },
+  { name: "Rajluck Register", href: "/rajluck-register" },
+  { name: "Rajluck Game App", href: "/rajluck-game-app" },
+  { name: "Rajluck Game 2026", href: "/rajluck-game-2026" },
+  { name: "Rajluck Game Android", href: "/rajluck-game-android" },
+  { name: "Rajluck Game Online", href: "/rajluck-game-online" },
+  { name: "Rajluck Game Play", href: "/rajluck-game-play" },
+  { name: "Rajluck Game Bonus", href: "/rajluck-game-bonus" },
+  { name: "Rajluck Game Rewards", href: "/rajluck-game-rewards" },
+  { name: "Rajluck Game Free", href: "/rajluck-game-free" },
 ];
 
 const legalLinks = [
@@ -67,7 +90,7 @@ export default function Footer() {
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a
@@ -133,6 +156,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {apkLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* More Pages */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              More
+            </h4>
+            <ul className="space-y-2.5">
+              {moreLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-gray-400 hover:text-red-400 transition-colors">
                     {link.name}
