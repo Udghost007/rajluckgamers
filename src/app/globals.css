@@ -134,6 +134,7 @@ body {
 /* Hero gradient backgrounds */
 .hero-gradient {
   background: #fca5a5;
+      padding-bottom: 100px;
 }
 
 .hero-gradient-soft {

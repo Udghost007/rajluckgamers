@@ -55,7 +55,7 @@ export default function DownloadArticle() {
       <article>
         {/* Hero */}
         <header className="hero-gradient-soft">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+          <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
               <span className="px-3 py-1 rounded-full bg-primary-100 text-primary text-xs font-semibold">Tutorial</span>
               <span className="text-sm text-text-muted">June 25, 2026</span>
@@ -65,14 +65,14 @@ export default function DownloadArticle() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-text-primary leading-tight mb-4">
               How to Download Rajluck APK on Android – Step by Step
             </h1>
-            <p className="text-text-secondary text-base sm:text-lg leading-relaxed max-w-3xl">
+            <p className="text-text-secondary text-base sm:text-lg leading-relaxed ">
               A detailed tutorial on downloading and installing the latest version of Rajluck Game APK on your Android phone or tablet.
             </p>
           </div>
         </header>
 
         {/* Content */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             <div className="flex-1 min-w-0">
               <section className="mb-10">

@@ -86,15 +86,15 @@ export default function BlogPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 text-white text-sm font-medium mb-5 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-5 sm:py-10 relative">
+          <div className="text-center  mx-auto">
+            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               Blog
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               Rajluck Game Blog
             </h1>
-            <p className="text-lg text-red-100 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-red-900 leading-relaxed  mx-auto">
               Latest guides, tutorials, and news about Rajluck Game. Stay informed and get the most out of your experience.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function BlogPage() {
 
       {/* Blog Posts */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
             {posts.map((post) => (
               <Link

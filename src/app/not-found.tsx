@@ -5,7 +5,7 @@ const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA
 export default function NotFound() {
   return (
     <section className="section-padding bg-white">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="text-8xl sm:text-9xl font-extrabold gradient-text mb-4">404</div>
         <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4">
           Page Not Found

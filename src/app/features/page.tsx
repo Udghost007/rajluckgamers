@@ -132,15 +132,15 @@ export default function FeaturesPage() {
           <div className="absolute top-20 left-20 w-60 h-60 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-20 w-80 h-80 bg-white rounded-full blur-3xl" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 text-white text-sm font-medium mb-5 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-5 sm:py-10 relative">
+          <div className="text-center  mx-auto">
+            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               Features
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               Rajluck Game Features
             </h1>
-            <p className="text-lg text-red-100 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-red-900 leading-relaxed  mx-auto">
               Discover the powerful features that make Rajluck Game the preferred choice for mobile gaming enthusiasts.
             </p>
           </div>
@@ -193,7 +193,7 @@ export default function FeaturesPage() {
 
       {/* Comparison Table */}
       <section className="section-padding bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Feature Overview
@@ -232,7 +232,7 @@ export default function FeaturesPage() {
 
       {/* CTA */}
       <section className="section-padding bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4">
             Experience All Features
           </h2>

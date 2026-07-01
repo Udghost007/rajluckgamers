@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
     <>
       {/* Hero */}
       <section className="hero-gradient-soft">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <span className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary text-xs font-semibold mb-4">
             Legal
           </span>
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
 
       {/* Content */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose-custom space-y-8">
             <p className="text-text-secondary leading-relaxed">
               Welcome to our website. Your privacy is important to us, and we are committed to protecting the information you share while using this website. This Privacy Policy explains how we collect, use, store, and safeguard your information when you visit our website for information related to Rajluck APK. By accessing or using this website, you agree to the terms of this Privacy Policy.

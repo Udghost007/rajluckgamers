@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA0DL7ND&ts=1782835740&m=2&lang=en&id=1";
@@ -120,15 +121,23 @@ export default function HomePage() {
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-28 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-4 sm:mb-6 animate-fade-in backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-5 sm:py-10 relative">
+          <div className="text-center mx-auto">
+            <Image
+              src="/raj-luck-game.webp"
+              alt="Rajluck Game Logo"
+              width={180}
+              height={180}
+              className="w-[100px] sm:w-[180px] mx-auto mb-6 drop-shadow-2xl animate-fade-in"
+              priority
+            />
+            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               Rajluck Game • Rajluck APK • Rajluck App
             </span>
             <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               Rajluck Game – Download Guide, Login Process, Features &amp; User Information
             </h1>
-            <p className="text-lg sm:text-xl text-black leading-relaxed mb-4 sm:mb-10 animate-slide-up delay-200 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-xl text-black leading-relaxed mb-4 sm:mb-5 animate-slide-up delay-200 mx-auto">
               Discover Rajluck Game — a mobile-friendly gaming platform that brings together multiple entertainment options in one application for Android users.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up delay-300">
@@ -136,7 +145,7 @@ export default function HomePage() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Download Now
+                Download APK Now
               </a>
               <Link href="/features" className="btn-outline !border-black !text-black hover:!bg-white hover:!text-primary !text-lg !py-2 sm:!py-4 !px-10">
                 Explore Features
@@ -154,7 +163,7 @@ export default function HomePage() {
 
       {/* Info Table Section */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Rajluck Game Information
@@ -180,6 +189,14 @@ export default function HomePage() {
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="text-center mt-8">
+            <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-cta !text-lg !py-4 !px-10 w-full sm:w-auto justify-center">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download APK
+            </a>
           </div>
         </div>
       </section>
@@ -230,7 +247,7 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Main Features of Rajluck Game
             </h2>
-            <p className="text-text-secondary max-w-xl mx-auto">
+            <p className="text-text-secondary  mx-auto">
               Explore the key features that make Rajluck Game one of the best mobile gaming platforms for Android.
             </p>
           </div>
@@ -357,7 +374,7 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Rewards &amp; Promotional Offers
             </h2>
-            <p className="text-text-secondary max-w-xl mx-auto">
+            <p className="text-text-secondary  mx-auto">
               Depending on ongoing campaigns, users may find these promotional benefits.
             </p>
           </div>
@@ -384,7 +401,7 @@ export default function HomePage() {
 
       {/* Tips Section */}
       <section className="section-padding bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Helpful Tips
@@ -410,7 +427,7 @@ export default function HomePage() {
 
       {/* FAQ Section */}
       <section className="section-padding bg-white" id="faq">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary text-sm font-medium mb-4">
               FAQs

@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     canonical: "https://rajluckgamers.com",
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "0-OG2l1pCdOxbT9qR_S_XQ7_mwLRJDWpC6yXcMnFU44",
   },
 };
 

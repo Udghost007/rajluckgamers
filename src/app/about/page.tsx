@@ -98,15 +98,15 @@ export default function AboutPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute bottom-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 text-white text-sm font-medium mb-5 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-5 sm:py-10 relative">
+          <div className="text-center  mx-auto">
+            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               About Us
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               About Rajluck Game
             </h1>
-            <p className="text-lg text-red-100 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-red-900 leading-relaxed  mx-auto">
               A mobile-friendly gaming platform designed to provide Android users with a convenient, secure, and enjoyable gaming experience.
             </p>
           </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="bg-white pb-8">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {stats.map((s, i) => (
               <div key={i} className="card p-5 sm:p-6 text-center">
@@ -134,7 +134,7 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary text-sm font-medium mb-4">
               Our Story
@@ -167,7 +167,7 @@ export default function AboutPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               What Makes Rajluck Game Different
             </h2>
-            <p className="text-text-secondary max-w-xl mx-auto">
+            <p className="text-text-secondary  mx-auto">
               Our commitment to quality, security, and user satisfaction sets us apart.
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="section-padding hero-gradient-soft">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4">
             Ready to Experience Rajluck Game?
           </h2>

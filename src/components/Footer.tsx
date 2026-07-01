@@ -25,7 +25,7 @@ export default function Footer() {
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Ready to Get Started?
           </h3>
-          <p className="text-red-100 mb-6 max-w-xl mx-auto">
+          <p className="text-red-100 mb-6  mx-auto">
             Download the Rajluck Game APK now and explore the complete gaming experience on your Android device.
           </p>
           <a

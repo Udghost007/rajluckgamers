@@ -42,7 +42,7 @@ export default function DisclaimerPage() {
     <>
       {/* Hero */}
       <section className="hero-gradient-soft">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <span className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary text-xs font-semibold mb-4">
             Legal
           </span>
@@ -57,7 +57,7 @@ export default function DisclaimerPage() {
 
       {/* Content */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
             <div className="card-static p-5 sm:p-8 bg-amber-50 border-amber-200">
               <div className="flex items-start gap-3">

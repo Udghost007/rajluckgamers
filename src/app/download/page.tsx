@@ -123,15 +123,15 @@ export default function DownloadPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 text-white text-sm font-medium mb-5 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-5 sm:py-10 relative">
+          <div className="text-center  mx-auto">
+            <span className="inline-block px-2 sm:px-4 py-1.5 rounded-full bg-white/20 text-black text-sm font-medium mb-3 sm:mb-4 animate-fade-in backdrop-blur-sm">
               Download Guide
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight mb-4 sm:mb-6 animate-slide-up">
               Download Rajluck Game APK
             </h1>
-            <p className="text-lg text-red-100 leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-red-900 leading-relaxed mb-8  mx-auto">
               Get the latest version of Rajluck Game APK for your Android device. Follow our step-by-step guide for a smooth download and installation.
             </p>
             <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-cta !text-lg !py-3 sm:!py-4 !px-10 inline-flex">
@@ -151,7 +151,7 @@ export default function DownloadPage() {
 
       {/* Step-by-Step Guide */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Step-by-Step Download Guide
@@ -184,7 +184,7 @@ export default function DownloadPage() {
 
       {/* Requirements */}
       <section className="section-padding bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-3">
               Device Requirements
@@ -216,7 +216,7 @@ export default function DownloadPage() {
 
       {/* Important Notes */}
       <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-text-primary mb-8 text-center">
             Important Download Tips
           </h2>
