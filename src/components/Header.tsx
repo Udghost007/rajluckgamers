@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import MobileMenu from "./MobileMenu";
 
 const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA0DL7ND&ts=1782835740&m=2&lang=en&id=1";
@@ -12,7 +16,75 @@ const navLinks = [
   { name: "Blog", href: "/blog" },
 ];
 
+const allRoutes = [
+  "/",
+  "/download",
+  "/about",
+  "/features",
+  "/blog",
+  "/blog/rajluck-game-complete-guide",
+  "/blog/rajluck-apk-download-android",
+  "/blog/rajluck-game-register-login",
+  "/rajluck",
+  "/raj-luck",
+  "/raj-luck-game",
+  "/rajluckgame",
+  "/rajluckgamers",
+  "/raj-luck-gamers",
+  "/rajluckapk",
+  "/raj-luck-apk",
+  "/raj-luck-game-apk",
+  "/rajluckgameapk",
+  "/rajluckgameapkdownload",
+  "/raj-luck-game-apk-download",
+  "/rajluckapkdownload",
+  "/rajluck-apk-download",
+  "/rajluck-game-download",
+  "/rajluck-game-login",
+  "/rajluck-game-register",
+  "/rajluck-game-app",
+  "/rajluck-game-2026",
+  "/rajluck-game-android",
+  "/rajluck-app-download",
+  "/rajluck-login",
+  "/rajluck-register",
+  "/download-rajluck",
+  "/rajluck-game-online",
+  "/rajluck-game-play",
+  "/rajluck-game-bonus",
+  "/rajluck-game-install",
+  "/rajluck-game-free",
+  "/rajluck-game-latest-version",
+  "/rajluck-game-update",
+  "/rajluck-download",
+  "/rajluck-game-apk-download",
+  "/rajluck-game-rewards",
+  "/privacy-policy",
+  "/disclaimer",
+];
+
 export default function Header() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const timers: NodeJS.Timeout[] = [];
+
+    // Wait 5 seconds, then prefetch all routes in a staggered manner
+    const mainTimer = setTimeout(() => {
+      allRoutes.forEach((route, index) => {
+        const routeTimer = setTimeout(() => {
+          router.prefetch(route);
+        }, index * 100); // 100ms stagger between each route prefetch
+        timers.push(routeTimer);
+      });
+    }, 5000);
+
+    return () => {
+      clearTimeout(mainTimer);
+      timers.forEach(clearTimeout);
+    };
+  }, [router]);
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border-light shadow-sm relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
