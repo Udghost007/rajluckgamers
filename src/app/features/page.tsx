@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     description: "Explore all features of Rajluck Game — fast registration, secure login, clean dashboard, promotions, and more for Android users.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "https://rajluckgamers.com/features" },
 };
 
 const mainFeatures = [

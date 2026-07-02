@@ -44,7 +44,6 @@ export const metadata: Metadata = {
     description: "Learn about Rajluck Game — a mobile-friendly Android gaming platform with easy registration, secure login, and regular APK updates.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "https://rajluckgamers.com/about" },
 };
 
 const values = [

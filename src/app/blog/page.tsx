@@ -45,7 +45,6 @@ export const metadata: Metadata = {
     description: "Read the latest articles, guides, and news about Rajluck Game. Tips on APK download, registration, login, and features.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "https://rajluckgamers.com/blog" },
 };
 
 const posts = [
