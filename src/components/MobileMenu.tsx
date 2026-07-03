@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/gtag";
 
 const CTA_LINK = "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA0DL7ND&ts=1782835740&m=2&lang=en&id=1";
 
@@ -19,7 +20,13 @@ export default function MobileMenu() {
   return (
     <>
       <button
-        onClick={() => setMobileOpen(!mobileOpen)}
+        onClick={() => {
+          setMobileOpen(!mobileOpen);
+          trackEvent("mobile_menu", {
+            event_category: "navigation",
+            action: mobileOpen ? "close" : "open",
+          });
+        }}
         className="md:hidden p-2 rounded-lg text-text-secondary hover:bg-surface transition-colors"
         aria-label="Toggle menu"
       >
@@ -41,7 +48,14 @@ export default function MobileMenu() {
               <Link
                 key={link.name}
                 href={link.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setMobileOpen(false);
+                  trackEvent("mobile_nav_click", {
+                    event_category: "navigation",
+                    event_label: link.name,
+                    link_url: link.href,
+                  });
+                }}
                 className="block px-4 py-3 rounded-lg text-sm font-medium text-text-secondary hover:text-primary hover:bg-primary-50 transition-all"
               >
                 {link.name}

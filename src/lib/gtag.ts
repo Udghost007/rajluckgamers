@@ -1,0 +1,10 @@
+export const GA_ID = "G-E2G4HMHW6W";
+
+export function trackEvent(
+  action: string,
+  params: Record<string, string | number | boolean>
+) {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", action, params);
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/gtag";
 
 interface FaqItem {
   q: string;
@@ -10,13 +11,24 @@ interface FaqItem {
 export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  function handleToggle(i: number, question: string) {
+    const isOpening = openFaq !== i;
+    setOpenFaq(isOpening ? i : null);
+    trackEvent("faq_interaction", {
+      event_category: "engagement",
+      event_label: question,
+      action: isOpening ? "open" : "close",
+      faq_index: i,
+    });
+  }
+
   return (
     <div className="space-y-3">
       {faqs.map((faq, i) => (
         <div key={i} className="faq-item">
           <button
             className="faq-question"
-            onClick={() => setOpenFaq(openFaq === i ? null : i)}
+            onClick={() => handleToggle(i, faq.q)}
             aria-expanded={openFaq === i}
           >
             <span>{faq.q}</span>
