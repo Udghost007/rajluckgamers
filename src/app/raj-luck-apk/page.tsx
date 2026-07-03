@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const CTA_LINK =
-  "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA0DL7ND&ts=1782835740&m=2&lang=en&id=1";
+  "https://share-rxapq9cajg.rajluck.co/web/share/index.html?ic=AA64CBGV&ts=1783054980&m=2&lang=en&id=1";
 
 export default function Page() {
   return (
